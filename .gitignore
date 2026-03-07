@@ -1,0 +1,25 @@
+# Terraform / OpenTofu
+**/.terraform/
+**/.terraform.lock.hcl
+**/terraform.tfstate
+**/terraform.tfstate.backup
+*.tfplan
+
+# Sensitive variables (passwords, secrets)
+**/private.tfvars
+**/secret.tfvars
+*.auto.tfvars
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Archives & submissions
+*.zip
+
+# Duplicate infrastructure folder
+infrastructure 2/
