@@ -4,37 +4,8 @@ A fully automated WordPress deployment on AWS using Terraform (OpenTofu), featur
 
 ## Architecture
 
-```
-                  Internet
-                     |
-              [ Internet Gateway ]
-                     |
-          ┌──────────────────────┐
-          │   Public Subnet      │
-          │   10.0.1.0/24 (AZ-a) │
-          │                      │
-          │  ┌────────────────┐  │
-          │  │  EC2 (WordPress)│  │
-          │  │  t2.micro       │  │
-          │  │  + Elastic IP   │  │
-          │  └───────┬────────┘  │
-          └──────────┼───────────┘
-                     │ (private ENI)
-     ┌───────────────┴────────────────┐
-     │  Private Subnet A              │
-     │  10.0.2.0/24 (AZ-a)           │
-     │         ┌─────────────────┐    │
-     │         │  RDS MariaDB    │    │
-     │         │  db.t3.micro    │    │
-     │         └─────────────────┘    │
-     ├────────────────────────────────┤
-     │  Private Subnet B              │
-     │  10.0.3.0/24 (AZ-b)           │
-     │  (RDS Multi-AZ subnet group)  │
-     └────────────────────────────────┘
+<img width="1382" height="1260" alt="image" src="https://github.com/user-attachments/assets/f65c0cd3-809e-4d59-8083-ded801514c27" />
 
-     [ S3 Bucket — WordPress Media ]
-```
 
 ## AWS Resources
 
