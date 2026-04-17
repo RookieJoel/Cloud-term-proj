@@ -48,7 +48,7 @@ infrastructure/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/Cloud-term-proj.git
+git clone https://github.com/RookieJoel/Cloud-term-proj.git
 cd Cloud-term-proj/infrastructure
 ```
 
